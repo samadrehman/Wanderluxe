@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Destinations — Domestic &amp; International | Wanderluxe</title>
+  <meta name="description" content="Explore 24 handpicked destinations across India and the world. Descriptions, top attractions, photo galleries and the best time to visit.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6a3d'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='white' stroke-width='3'/%3E%3Cpath d='M40 24l-6 12-12 6 6-12z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="pagehero">
+      <img class="pagehero__bg" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1800&q=85" alt="Himalayan landscape">
+      <div class="container">
+        <div class="crumbs"><a href="index.html">Home</a> <i data-icon="chevronRight"></i> <span>Destinations</span></div>
+        <h1>Places worth the passport stamp</h1>
+        <p>24 destinations, two hemispheres. Explore descriptions, top attractions, photo galleries and the best months to go — then let us handle the rest.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="toolbar">
+          <div class="chips" id="regionChips">
+            <button class="chip is-active" data-region="all" type="button"><i data-icon="globe"></i> All destinations</button>
+            <button class="chip" data-region="india" type="button"><i data-icon="mapPin"></i> India</button>
+            <button class="chip" data-region="international" type="button"><i data-icon="plane"></i> International</button>
+          </div>
+          <div class="toolbar__right">
+            <label class="searchbox">
+              <i data-icon="search"></i>
+              <input type="search" id="destSearch" placeholder="Search destinations…" aria-label="Search destinations">
+            </label>
+            <div class="selectwrap">
+              <select id="destInterest" aria-label="Filter by interest">
+                <option value="all">All interests</option>
+                <option value="Heritage">Heritage</option>
+                <option value="Beach">Beaches</option>
+                <option value="Mountains">Mountains</option>
+                <option value="Honeymoon">Honeymoon</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Nature">Nature</option>
+                <option value="Spiritual">Spiritual</option>
+                <option value="City">Cities</option>
+              </select>
+              <i data-icon="chevronDown"></i>
+            </div>
+            <div class="selectwrap">
+              <select id="destSort" aria-label="Sort destinations">
+                <option value="popular">Most popular</option>
+                <option value="price-asc">Price: low to high</option>
+                <option value="price-desc">Price: high to low</option>
+                <option value="name">Name: A–Z</option>
+              </select>
+              <i data-icon="chevronDown"></i>
+            </div>
+          </div>
+        </div>
+
+        <div id="destNote"></div>
+        <div class="results-count" id="destCount" style="margin-bottom:18px"></div>
+        <div class="grid grid--3" id="destGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="best-time">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">When to go</span>
+          <h2>Best time to visit, at a glance</h2>
+          <p>India has three travel seasons. Each destination page carries its own month-by-month guide — here is the short version.</p>
+        </div>
+        <div class="grid grid--3">
+          <div class="season reveal">
+            <div class="season__head"><span><i data-icon="snow"></i></span><div><b>Winter</b><small>October – March</small></div></div>
+            <ul>
+              <li>Rajasthan &amp; the Golden Triangle <small>18–28°C</small></li>
+              <li>Kerala &amp; Tamil Nadu <small>24–32°C</small></li>
+              <li>Goa &amp; the Andamans <small>22–31°C</small></li>
+              <li>Dubai &amp; the Maldives <small>24–30°C</small></li>
+            </ul>
+          </div>
+          <div class="season season--summer reveal" data-delay="1">
+            <div class="season__head"><span><i data-icon="sun"></i></span><div><b>Summer</b><small>April – June</small></div></div>
+            <ul>
+              <li>Ladakh &amp; Spiti <small>10–22°C</small></li>
+              <li>Kashmir &amp; Himachal <small>15–28°C</small></li>
+              <li>Meghalaya &amp; Sikkim <small>16–24°C</small></li>
+              <li>Switzerland &amp; Europe <small>16–26°C</small></li>
+            </ul>
+          </div>
+          <div class="season season--monsoon reveal" data-delay="2">
+            <div class="season__head"><span><i data-icon="cloudRain"></i></span><div><b>Monsoon</b><small>July – September</small></div></div>
+            <ul>
+              <li>Western Ghats &amp; Coorg <small>lush &amp; green</small></li>
+              <li>Valley of Flowers <small>blooming</small></li>
+              <li>Udaipur &amp; Bundi <small>dramatic skies</small></li>
+              <li>Bali &amp; Thailand <small>shoulder season</small></li>
+            </ul>
+          </div>
+        </div>
+        <div class="notice" style="margin-top:24px">
+          <i data-icon="info"></i>
+          <span><b>Good to know:</b> monsoon is not a write-off. It is the best-value season for luxury hotels in the Western Ghats, and the most dramatic light for photographers.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="newsletter reveal">
+          <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=80" alt="Travel planning" loading="lazy">
+          <span class="eyebrow">Not sure where to start?</span>
+          <h2>Tell us the feeling. We'll find the place.</h2>
+          <p>Answer three quick questions and a planner will send two or three destinations that fit your dates, budget and travel style.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn btn--white" href="contact.html">Talk to a planner <i data-icon="arrowRight"></i></a>
+            <a class="btn btn--outline-white" href="packages.html?type=custom">Build a custom trip</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/cards.js"></script>
+  <script src="assets/js/destinations.js"></script>
+</body>
+</html>

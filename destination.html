@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Destination Guide | Wanderluxe</title>
+  <meta name="description" content="Destination guide with description, top attractions, photo gallery, best time to visit and related tour packages.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6a3d'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='white' stroke-width='3'/%3E%3Cpath d='M40 24l-6 12-12 6 6-12z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main id="destMain">
+    <section class="pagehero">
+      <img class="pagehero__bg" id="destHeroImg" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1800&q=85" alt="Destination">
+      <div class="container">
+        <div class="crumbs"><a href="index.html">Home</a> <i data-icon="chevronRight"></i> <a href="destinations.html">Destinations</a> <i data-icon="chevronRight"></i> <span id="destCrumb">Guide</span></div>
+        <div class="pkg-hero__badges" id="destBadges"></div>
+        <h1 id="destTitle">Destination guide</h1>
+        <p id="destTagline"></p>
+        <div class="pkg-hero__meta" id="destMeta" style="margin-top:16px"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container detail-layout">
+        <div class="detail" id="destDetail"></div>
+        <aside class="sticky-side" id="destSide"></aside>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div class="section-head__text">
+            <span class="eyebrow">Ready to go</span>
+            <h2>Tour packages for <span id="relatedName">this destination</span></h2>
+            <p>Day-wise itineraries, hotels, transport and honest inclusions — all priced per person.</p>
+          </div>
+          <a class="btn btn--ghost" href="packages.html">All packages <i data-icon="arrowRight"></i></a>
+        </div>
+        <div class="grid grid--3" id="relatedPackages"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div class="section-head__text">
+            <span class="eyebrow">Keep exploring</span>
+            <h2>You might also love</h2>
+          </div>
+          <a class="btn btn--ghost" href="destinations.html">All destinations <i data-icon="arrowRight"></i></a>
+        </div>
+        <div class="grid grid--3" id="nearbyGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/cards.js"></script>
+  <script src="assets/js/destination.js"></script>
+</body>
+</html>

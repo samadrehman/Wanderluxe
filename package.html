@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tour Package Details | Wanderluxe</title>
+  <meta name="description" content="Day-wise itinerary, hotels, transport, inclusions, exclusions and online booking for your Wanderluxe tour package.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6a3d'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='white' stroke-width='3'/%3E%3Cpath d='M40 24l-6 12-12 6 6-12z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="pkg-hero">
+      <img class="pkg-hero__bg" id="pkgHeroImg" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1800&q=85" alt="Tour package">
+      <div class="container">
+        <div class="crumbs"><a href="index.html">Home</a> <i data-icon="chevronRight"></i> <a href="packages.html">Packages</a> <i data-icon="chevronRight"></i> <span id="pkgCrumb">Details</span></div>
+        <div class="pkg-hero__badges" id="pkgBadges"></div>
+        <h1 id="pkgTitle">Tour package</h1>
+        <div class="pkg-hero__meta" id="pkgMeta"></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:40px">
+      <div class="container pkg-layout">
+        <div>
+          <div class="tabs" id="pkgTabs" role="tablist">
+            <button class="is-active" data-tab="overview" type="button">Overview</button>
+            <button data-tab="itinerary" type="button">Day-wise itinerary</button>
+            <button data-tab="stay" type="button">Hotels &amp; transport</button>
+            <button data-tab="inclusions" type="button">Inclusions</button>
+          </div>
+
+          <div class="tabpanel is-active" data-panel="overview" id="panelOverview"></div>
+          <div class="tabpanel" data-panel="itinerary" id="panelItinerary"></div>
+          <div class="tabpanel" data-panel="stay" id="panelStay"></div>
+          <div class="tabpanel" data-panel="inclusions" id="panelInclusions"></div>
+        </div>
+
+        <aside class="sticky-side">
+          <div class="book-card" id="bookCard"></div>
+          <div class="side-card" style="padding:18px">
+            <div style="display:flex;gap:8px">
+              <button class="btn btn--ghost btn--sm" style="flex:1" id="printBtn" type="button"><i data-icon="printer"></i> Print</button>
+              <button class="btn btn--ghost btn--sm" style="flex:1" id="saveBtn" type="button"><i data-icon="heart"></i> Save</button>
+            </div>
+            <a class="btn btn--soft btn--block btn--sm" style="margin-top:8px" href="contact.html"><i data-icon="headset"></i> Talk to a travel expert</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div class="section-head__text">
+            <span class="eyebrow">More like this</span>
+            <h2>You may also like</h2>
+          </div>
+          <a class="btn btn--ghost" href="packages.html">All packages <i data-icon="arrowRight"></i></a>
+        </div>
+        <div class="grid grid--3" id="similarGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/cards.js"></script>
+  <script src="assets/js/package.js"></script>
+</body>
+</html>

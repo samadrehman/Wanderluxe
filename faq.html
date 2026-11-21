@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ — Booking, Payments, Changes &amp; Travel | Wanderluxe</title>
+  <meta name="description" content="Answers to common questions about booking tours, payments, cancellations, visas, hotels and travelling with Wanderluxe.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6a3d'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='white' stroke-width='3'/%3E%3Cpath d='M40 24l-6 12-12 6 6-12z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="pagehero">
+      <img class="pagehero__bg" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1800&q=85" alt="Lake and mountains">
+      <div class="container">
+        <div class="crumbs"><a href="index.html">Home</a> <i data-icon="chevronRight"></i> <span>FAQ</span></div>
+        <h1>Questions, answered honestly</h1>
+        <p>Booking, payments, changes, visas and what actually happens on the trip. If it is not here, ask us — a real person replies.</p>
+        <div class="searchbox" style="margin-top:22px;max-width:460px;background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.25);backdrop-filter:blur(10px)">
+          <i data-icon="search" style="color:rgba(255,255,255,.75)"></i>
+          <input type="search" id="faqSearch" placeholder="Search a question… e.g. cancellation, visa, flights" aria-label="Search FAQs" style="color:#fff">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="faq-layout">
+          <aside>
+            <div class="faq-nav" id="faqNav"></div>
+            <div class="side-card" style="margin-top:20px">
+              <h3 style="font-size:.95rem"><i data-icon="headset"></i> Still stuck?</h3>
+              <p class="small muted" style="margin-bottom:12px">Our planners answer within minutes during office hours.</p>
+              <a class="btn btn--primary btn--block btn--sm" href="contact.html">Ask a question <i data-icon="arrowRight"></i></a>
+              <a class="btn btn--ghost btn--block btn--sm" style="margin-top:8px" href="tel:+919876543210"><i data-icon="phone"></i> +91 98765 43210</a>
+            </div>
+          </aside>
+
+          <div>
+            <div class="chips" id="faqPopular" style="margin-bottom:22px"></div>
+            <div id="faqGroups"></div>
+            <div class="notice notice--teal" style="margin-top:24px">
+              <i data-icon="shield"></i>
+              <span><b>Book with confidence.</b> Free cancellation up to 15 days before departure, a 25% deposit to hold your seats, and a full refund if we cancel a trip.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="grid grid--2" style="align-items:center;gap:44px">
+          <div class="reveal">
+            <span class="eyebrow">Didn't find it?</span>
+            <h2>Ask us directly</h2>
+            <p class="muted">Every enquiry is read by a travel planner — not a call centre. Tell us what you are unsure about and we will give you a straight answer, even if it costs us the booking.</p>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">
+              <a class="btn btn--primary" href="contact.html">Send a message <i data-icon="send"></i></a>
+              <a class="btn btn--ghost" href="https://wa.me/919876543210" target="_blank" rel="noopener"><i data-icon="whatsapp"></i> WhatsApp us</a>
+            </div>
+          </div>
+          <div class="grid grid--2 reveal" data-delay="1">
+            <div class="feature">
+              <div class="feature__icon"><i data-icon="clock"></i></div>
+              <h3>47 min</h3>
+              <p>Average first reply during office hours.</p>
+            </div>
+            <div class="feature">
+              <div class="feature__icon feature__icon--teal"><i data-icon="headset"></i></div>
+              <h3>24×7</h3>
+              <p>On-trip emergency desk, every day of the year.</p>
+            </div>
+            <div class="feature">
+              <div class="feature__icon feature__icon--gold"><i data-icon="star"></i></div>
+              <h3>4.9 / 5</h3>
+              <p>From 12,480 verified traveller reviews.</p>
+            </div>
+            <div class="feature">
+              <div class="feature__icon feature__icon--blue"><i data-icon="shield"></i></div>
+              <h3>15 days</h3>
+              <p>Free cancellation window before departure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/cards.js"></script>
+  <script src="assets/js/faq.js"></script>
+</body>
+</html>

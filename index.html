@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wanderluxe â€” Boutique Tours &amp; Holiday Packages in India &amp; Beyond</title>
+  <meta name="description" content="Handcrafted tour packages across India and 24 countries. Family holidays, honeymoons, adventure trips and custom journeys with 24Ã—7 support.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6a3d'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='white' stroke-width='3'/%3E%3Cpath d='M40 24l-6 12-12 6 6-12z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__media">
+        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=2000&q=85" alt="Kerala backwaters at golden hour" fetchpriority="high">
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <span class="pill pill--glass"><i data-icon="sparkles"></i> India's highest-rated boutique tour operator</span>
+          <h1>Chase the places that <em>change you</em>.</h1>
+          <p>Handcrafted journeys across India and 24 countries â€” private guides, stays with soul and a real human on call, always.</p>
+          <div class="hero__meta">
+            <div class="avatars">
+              <img src="https://i.pravatar.cc/80?img=32" alt="Traveller">
+              <img src="https://i.pravatar.cc/80?img=12" alt="Traveller">
+              <img src="https://i.pravatar.cc/80?img=68" alt="Traveller">
+              <img src="https://i.pravatar.cc/80?img=45" alt="Traveller">
+            </div>
+            <div>
+              <span class="rating"><i data-icon="star"></i> 4.9 <span>Â· 12,480 reviews</span></span>
+              <small>Loved by families, couples &amp; solo explorers</small>
+            </div>
+          </div>
+        </div>
+        <div class="hero__aside" aria-hidden="true">
+          <div class="glass-card">
+            <div class="glass-card__top"><strong>Next group departure</strong><span class="badge badge--gold">6 seats left</span></div>
+            <p>Ladakh Bike Expedition Â· 8 days</p>
+            <div class="glass-card__row"><span>12 Jun 2027</span><b>â‚¹38,999</b></div>
+          </div>
+          <div class="glass-card glass-card--offset">
+            <div class="glass-card__top"><strong>Trip of the month</strong><i data-icon="heart"></i></div>
+            <p>Maldives overwater villa Â· all-inclusive</p>
+            <div class="glass-card__row"><span>4 nights from</span><b>â‚¹84,999</b></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search -->
+      <div class="container searchbar-wrap">
+        <form class="searchbar" id="searchForm" role="search">
+          <div class="searchbar__tabs" role="tablist">
+            <button type="button" class="is-active" data-tab="india"><i data-icon="mapPin"></i> Domestic</button>
+            <button type="button" data-tab="international"><i data-icon="globe"></i> International</button>
+            <button type="button" data-tab="packages"><i data-icon="ticket"></i> Tour packages</button>
+          </div>
+          <div class="searchbar__fields">
+            <label class="field">
+              <span>Destination</span>
+              <select id="searchDest" aria-label="Destination"></select>
+            </label>
+            <label class="field">
+              <span>Travel date</span>
+              <input type="date" id="searchDate" aria-label="Travel date">
+            </label>
+            <label class="field">
+              <span>Travellers</span>
+              <select id="searchTravellers" aria-label="Travellers">
+                <option value="1">1 traveller</option>
+                <option value="2" selected>2 travellers</option>
+                <option value="3">3 travellers</option>
+                <option value="4">4 travellers</option>
+                <option value="5">5 travellers</option>
+                <option value="6">6+ travellers</option>
+              </select>
+            </label>
+            <button class="btn btn--primary" type="submit"><i data-icon="search"></i> Search</button>
+          </div>
+          <div class="searchbar__hint">
+            <b>Trending:</b>
+            <a href="destination.html?id=kerala-backwaters">Kerala backwaters</a>
+            <a href="destination.html?id=leh-ladakh">Ladakh</a>
+            <a href="destination.html?id=maldives">Maldives</a>
+            <a href="destination.html?id=udaipur">Udaipur</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="stats reveal">
+          <div class="stat">
+            <span class="stat__icon"><i data-icon="users"></i></span>
+            <div><b data-count="12480">0</b><small>Travellers hosted</small></div>
+          </div>
+          <div class="stat">
+            <span class="stat__icon"><i data-icon="mapPin"></i></span>
+            <div><b data-count="24">0</b><small>Countries covered</small></div>
+          </div>
+          <div class="stat">
+            <span class="stat__icon"><i data-icon="award"></i></span>
+            <div><b data-count="11">0</b><small>Years of journeys</small></div>
+          </div>
+          <div class="stat">
+            <span class="stat__icon"><i data-icon="headset"></i></span>
+            <div><b>24Ã—7</b><small>Human support</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular destinations -->
+    <section class="section" id="destinations">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div class="section-head__text">
+            <span class="eyebrow">Most loved in India</span>
+            <h2>Popular destinations, picked by our travellers</h2>
+            <p>From the marble of Agra to the backwaters of Kerala â€” the places our guests rebook, recommend and return to.</p>
+          </div>
+          <a class="btn btn--ghost" href="destinations.html?region=india">All destinations <i data-icon="arrowRight"></i></a>
+        </div>
+        <div class="grid grid--3" id="popularGrid"></div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Why Wanderluxe</span>
+          <h2>Big-trip planning, without the big-trip stress</h2>
+          <p>We keep groups small, stays characterful and the fine print honest. Everything else is handled.</p>
+        </div>
+        <div class="grid grid--3">
+          <div class="feature reveal">
+            <div class="feature__icon"><i data-icon="route"></i></div>
+            <h3>Handcrafted itineraries</h3>
+            <p>Every route is walked by our team before it reaches you. No filler stops, no rushed mornings.</p>
+          </div>
+          <div class="feature reveal" data-delay="1">
+            <div class="feature__icon feature__icon--teal"><i data-icon="wallet"></i></div>
+            <h3>Transparent pricing</h3>
+            <p>One clear price with inclusions listed upfront. No surprise supplements at check-in.</p>
+          </div>
+          <div class="feature reveal" data-delay="2">
+            <div class="feature__icon feature__icon--gold"><i data-icon="shield"></i></div>
+            <h3>Safe &amp; flexible</h3>
+            <p>Free cancellation up to 15 days, vetted drivers and 24Ã—7 emergency assistance.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature__icon feature__icon--blue"><i data-icon="hotel"></i></div>
+            <h3>Stays with character</h3>
+            <p>Heritage havelis, boutique villas and jungle lodges â€” chosen for the place, not the points.</p>
+          </div>
+          <div class="feature reveal" data-delay="1">
+            <div class="feature__icon feature__icon--teal"><i data-icon="users"></i></div>
+            <h3>Small groups only</h3>
+            <p>Group departures cap at 16 travellers. You get conversation, not a crowd.</p>
+          </div>
+          <div class="feature reveal" data-delay="2">
+            <div class="feature__icon"><i data-icon="headset"></i></div>
+            <h3>Real humans, always</h3>
+            <p>A dedicated planner and a WhatsApp line that answers within minutes, not days.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="section" id="packages">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div class="section-head__text">
+            <span class="eyebrow">Tour packages</span>
+            <h2>Trips for every kind of traveller</h2>
+            <p>Family escapes, honeymoons, adrenaline weekends and small-group adventures â€” all with day-wise itineraries and honest inclusions.</p>
+          </div>
+          <a class="btn btn--ghost" href="packages.html">Browse all packages <i data-icon="arrowRight"></i></a>
+        </div>
+        <div class="chips reveal" style="margin-bottom:24px">
+          <a class="chip is-active" href="packages.html">All</a>
+          <a class="chip" href="packages.html?type=family"><i data-icon="users"></i> Family</a>
+          <a class="chip" href="packages.html?type=honeymoon"><i data-icon="heart"></i> Honeymoon</a>
+          <a class="chip" href="packages.html?type=adventure"><i data-icon="mountain"></i> Adventure</a>
+          <a class="chip" href="packages.html?type=budget"><i data-icon="wallet"></i> Budget</a>
+          <a class="chip" href="packages.html?type=weekend"><i data-icon="clock"></i> Weekend</a>
+          <a class="chip" href="packages.html?type=group"><i data-icon="users"></i> Group</a>
+          <a class="chip" href="packages.html?type=custom"><i data-icon="sparkles"></i> Custom</a>
+        </div>
+        <div class="grid grid--3" id="packageGrid"></div>
+      </div>
+    </section>
+
+    <!-- Offers -->
+    <section class="section section--soft" id="offers">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div class="section-head__text">
+            <span class="eyebrow">Special offers</span>
+            <h2>Save more, travel further</h2>
+            <p>Limited-time codes on selected departures. Click a code to copy it, then use it at checkout.</p>
+          </div>
+          <div class="countdown" id="offerCountdown" aria-label="Offer countdown">
+            <div><b id="cdDays">00</b><small>Days</small></div>
+            <div><b id="cdHours">00</b><small>Hrs</small></div>
+            <div><b id="cdMins">00</b><small>Min</small></div>
+            <div><b id="cdSecs">00</b><small>Sec</small></div>
+          </div>
+        </div>
+        <div class="grid grid--3" id="offerGrid"></div>
+      </div>
+    </section>
+
+    <!-- Regions -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Choose your horizon</span>
+          <h2>Home ground or far away?</h2>
+          <p>Both are good answers. Start with the side of the map that fits your passport and your mood.</p>
+        </div>
+        <div class="grid grid--2">
+          <a class="region-card reveal" href="destinations.html?region=india">
+            <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80" alt="Jaipur, India" loading="lazy">
+            <div>
+              <span class="pill pill--glass"><i data-icon="mapPin"></i> Domestic</span>
+              <h3 style="margin-top:12px">Incredible India</h3>
+              <p>Himalayan passes, desert palaces, rainforest backwaters and island reefs â€” all without a visa.</p>
+              <div class="region-card__stats">
+                <div><b>12</b>destinations</div>
+                <div><b>â‚¹8,999</b>starting from</div>
+                <div><b>4.9â˜…</b>rated</div>
+              </div>
+              <span class="btn btn--white">Explore India <i data-icon="arrowRight"></i></span>
+            </div>
+          </a>
+          <a class="region-card reveal" data-delay="1" href="destinations.html?region=international">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80" alt="Bali, Indonesia" loading="lazy">
+            <div>
+              <span class="pill pill--glass"><i data-icon="globe"></i> International</span>
+              <h3 style="margin-top:12px">The world, curated</h3>
+              <p>Bali, Dubai, the Maldives, Switzerland and beyond â€” visas, transfers and stays sorted.</p>
+              <div class="region-card__stats">
+                <div><b>12</b>countries</div>
+                <div><b>â‚¹38,999</b>starting from</div>
+                <div><b>4.8â˜…</b>rated</div>
+              </div>
+              <span class="btn btn--white">Explore the world <i data-icon="arrowRight"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best time -->
+    <section class="section section--soft" id="best-time">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">When to go</span>
+          <h2>Best time to visit, at a glance</h2>
+          <p>India has three travel seasons. Here is what each one is genuinely good for â€” and where to go.</p>
+        </div>
+        <div class="grid grid--3">
+          <div class="season reveal">
+            <div class="season__head">
+              <span><i data-icon="snow"></i></span>
+              <div><b>Winter</b><small>October â€“ March</small></div>
+            </div>
+            <ul>
+              <li>Rajasthan &amp; the Golden Triangle <small>18â€“28Â°C</small></li>
+              <li>Kerala &amp; Tamil Nadu <small>24â€“32Â°C</small></li>
+              <li>Goa &amp; the Andamans <small>22â€“31Â°C</small></li>
+              <li>Varanasi &amp; Khajuraho <small>12â€“25Â°C</small></li>
+            </ul>
+          </div>
+          <div class="season season--summer reveal" data-delay="1">
+            <div class="season__head">
+              <span><i data-icon="sun"></i></span>
+              <div><b>Summer</b><small>April â€“ June</small></div>
+            </div>
+            <ul>
+              <li>Ladakh &amp; Spiti <small>10â€“22Â°C</small></li>
+              <li>Kashmir &amp; Himachal <small>15â€“28Â°C</small></li>
+              <li>Meghalaya &amp; Sikkim <small>16â€“24Â°C</small></li>
+              <li>Europe &amp; Switzerland <small>16â€“26Â°C</small></li>
+            </ul>
+          </div>
+          <div class="season season--monsoon reveal" data-delay="2">
+            <div class="season__head">
+              <span><i data-icon="cloudRain"></i></span>
+              <div><b>Monsoon</b><small>July â€“ September</small></div>
+            </div>
+            <ul>
+              <li>Western Ghats &amp; Coorg <small>lush &amp; green</small></li>
+              <li>Valley of Flowers <small>blooming</small></li>
+              <li>Udaipur &amp; Bundi <small>dramatic skies</small></li>
+              <li>Bali &amp; Thailand <small>shoulder season</small></li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-center small muted" style="margin:22px 0 0">Every destination page includes a month-by-month weather guide and festival calendar.</p>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div class="section-head__text">
+            <span class="eyebrow">Photo gallery</span>
+            <h2>Postcards from our travellers</h2>
+            <p>Real trips, real light. Click any photo to open the full-size gallery.</p>
+          </div>
+          <a class="btn btn--ghost" href="destinations.html">Find these places <i data-icon="arrowRight"></i></a>
+        </div>
+        <div class="gallery" id="homeGallery"></div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Traveller stories</span>
+          <h2>12,000 trips. Thousands of happy tears.</h2>
+          <p>We ask every traveller for an honest review. Here are three we are especially proud of.</p>
+        </div>
+        <div class="grid grid--3" id="testimonialGrid"></div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div class="section-head__text">
+            <span class="eyebrow">The journal</span>
+            <h2>Read before you go</h2>
+            <p>Practical guides, honest hotel notes and the occasional love letter to a place.</p>
+          </div>
+          <a class="btn btn--ghost" href="blog.html">All stories <i data-icon="arrowRight"></i></a>
+        </div>
+        <div class="grid grid--3" id="blogGrid"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="grid grid--2" style="align-items:start;gap:48px">
+          <div class="reveal">
+            <span class="eyebrow">Good to know</span>
+            <h2>Questions, answered</h2>
+            <p class="muted">Everything about booking, payments, changes and what happens once you land. Still curious? Our team replies within minutes.</p>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px">
+              <a class="btn btn--primary" href="faq.html">Read all FAQs <i data-icon="arrowRight"></i></a>
+              <a class="btn btn--ghost" href="contact.html"><i data-icon="headset"></i> Talk to a planner</a>
+            </div>
+            <div class="notice notice--teal" style="margin-top:26px">
+              <i data-icon="shield"></i>
+              <span><b>Book with confidence.</b> Free cancellation up to 15 days before departure, and a full refund if we cancel.</span>
+            </div>
+          </div>
+          <div class="acc reveal" data-delay="1" id="faqPreview" data-single="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="newsletter reveal">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80" alt="Mountain lake" loading="lazy">
+          <span class="eyebrow">The Sunday postcard</span>
+          <h2>One beautiful place. Every Sunday.</h2>
+          <p>Handpicked destinations, fare drops and early access to new departures. No spam, ever.</p>
+          <form class="newsletter__form" id="newsletterForm">
+            <input type="email" placeholder="you@example.com" aria-label="Email address" required>
+            <button class="btn btn--white" type="submit">Subscribe <i data-icon="send"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/cards.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>

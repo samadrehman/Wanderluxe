@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us — Talk to a Travel Planner | Wanderluxe</title>
+  <meta name="description" content="Call, email or visit Wanderluxe in Bengaluru. Talk to a real travel planner, find our offices and get a custom itinerary within 24 hours.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6a3d'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='white' stroke-width='3'/%3E%3Cpath d='M40 24l-6 12-12 6 6-12z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="pagehero">
+      <img class="pagehero__bg" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85" alt="Open road through mountains">
+      <div class="container">
+        <div class="crumbs"><a href="index.html">Home</a> <i data-icon="chevronRight"></i> <span>Contact</span></div>
+        <h1>Let's plan something good</h1>
+        <p>Tell us where you are dreaming of. A real planner — not a chatbot — will reply within a few hours, usually much sooner.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <div>
+          <span class="eyebrow">Reach us</span>
+          <h2 style="margin-bottom:14px">Four ways to start</h2>
+          <p class="muted" style="margin-bottom:22px">Call us for a quick question, WhatsApp for a back-and-forth, or send the form and we will come back with a plan.</p>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-item__icon"><i data-icon="phone"></i></span>
+              <div>
+                <b>Call the travel desk</b>
+                <p>Mon–Sat, 9:00 am – 8:00 pm IST</p>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item__icon"><i data-icon="whatsapp"></i></span>
+              <div>
+                <b>WhatsApp us</b>
+                <p>Fastest for itineraries, quotes and trip changes</p>
+                <a href="https://wa.me/919876543210?text=Hi%20Wanderluxe%2C%20I%27d%20like%20to%20plan%20a%20trip." target="_blank" rel="noopener">Start a chat</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item__icon"><i data-icon="mail"></i></span>
+              <div>
+                <b>Email</b>
+                <p>For documents, invoices and detailed briefs</p>
+                <a href="mailto:hello@wanderluxe.in">hello@wanderluxe.in</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item__icon"><i data-icon="mapPin"></i></span>
+              <div>
+                <b>Visit the studio</b>
+                <p>2nd Floor, Lotus Tower, MG Road,<br>Bengaluru 560001, Karnataka</p>
+                <a href="#map">See on the map</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="notice notice--teal" style="margin-top:18px">
+            <i data-icon="clock"></i>
+            <span><b>Average reply time: 47 minutes</b> during office hours. Urgent trip issue? Call the number above and ask for the on-trip desk — it is staffed 24×7.</span>
+          </div>
+
+          <div class="side-card" style="margin-top:18px">
+            <h3 style="font-size:.98rem"><i data-icon="headset"></i> Already travelling with us?</h3>
+            <p class="small muted" style="margin-bottom:0">Use the 24×7 number in your trip documents or message your planner on WhatsApp. Please include your booking ID (WL-…) so we can help faster.</p>
+          </div>
+        </div>
+
+        <div class="panel-card" style="margin:0">
+          <h3>Send us a message</h3>
+          <p class="small muted">Fields marked * are required. If you are asking about a specific trip, add your dates and group size.</p>
+
+          <form class="form" id="contactForm" novalidate style="margin-top:16px">
+            <div class="form-row">
+              <div class="input-group">
+                <label for="cName">Your name <span class="req">*</span></label>
+                <input class="input" id="cName" autocomplete="name" placeholder="Full name">
+                <span class="err" id="cNameErr">Please tell us your name.</span>
+              </div>
+              <div class="input-group">
+                <label for="cPhone">Mobile <span class="req">*</span></label>
+                <input class="input" id="cPhone" type="tel" autocomplete="tel" placeholder="+91 98765 43210">
+                <span class="err" id="cPhoneErr">Enter a valid mobile number (10–13 digits).</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="cEmail">Email <span class="req">*</span></label>
+                <input class="input" id="cEmail" type="email" autocomplete="email" placeholder="you@example.com">
+                <span class="err" id="cEmailErr">Please enter a valid email address.</span>
+              </div>
+              <div class="input-group">
+                <label for="cCity">City</label>
+                <input class="input" id="cCity" autocomplete="address-level2" placeholder="Bengaluru">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="cSubject">What is this about? <span class="req">*</span></label>
+                <div class="selectwrap" style="display:block">
+                  <select class="input" id="cSubject" style="width:100%">
+                    <option value="new">A new trip enquiry</option>
+                    <option value="custom">A custom itinerary</option>
+                    <option value="existing">An existing booking</option>
+                    <option value="group">A group or corporate trip</option>
+                    <option value="feedback">Feedback or a complaint</option>
+                    <option value="press">Press or partnerships</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-group">
+                <label for="cTravellers">Travellers</label>
+                <div class="selectwrap" style="display:block">
+                  <select class="input" id="cTravellers" style="width:100%">
+                    <option value="1">1 traveller</option>
+                    <option value="2" selected>2 travellers</option>
+                    <option value="3">3 travellers</option>
+                    <option value="4">4 travellers</option>
+                    <option value="5">5 travellers</option>
+                    <option value="6">6+ travellers</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="cDate">Approximate travel date</label>
+                <input class="input" id="cDate" type="date">
+              </div>
+              <div class="input-group">
+                <label for="cBudget">Budget per person</label>
+                <div class="selectwrap" style="display:block">
+                  <select class="input" id="cBudget" style="width:100%">
+                    <option value="">Not sure yet</option>
+                    <option value="under-15">Under ₹15,000</option>
+                    <option value="15-30">₹15,000 – ₹30,000</option>
+                    <option value="30-60">₹30,000 – ₹60,000</option>
+                    <option value="60-100">₹60,000 – ₹1,00,000</option>
+                    <option value="100-plus">₹1,00,000+</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="cMessage">Tell us about the trip <span class="req">*</span></label>
+              <textarea class="textarea" id="cMessage" placeholder="Where you'd like to go, who's coming, what you love doing on holiday…"></textarea>
+              <span class="err" id="cMessageErr">A sentence or two is enough — but we do need something to go on.</span>
+            </div>
+            <label class="check">
+              <input type="checkbox" id="cConsent" checked>
+              <span>I am happy to be contacted about this enquiry. No newsletters unless I ask.</span>
+            </label>
+            <button class="btn btn--primary btn--lg btn--block" type="submit" id="contactSubmit">
+              <i data-icon="send"></i> Send message
+            </button>
+            <p class="small muted text-center" style="margin:0">We reply within one working day. Your details are never sold or shared.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="map">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div class="section-head__text">
+            <span class="eyebrow">Find us</span>
+            <h2>Come say hello in Bengaluru</h2>
+            <p>We are a five-minute walk from Trinity Metro on MG Road. Coffee is on us — please book a slot so we can give you our full attention.</p>
+          </div>
+          <a class="btn btn--ghost" href="https://maps.google.com/?q=MG+Road+Bengaluru" target="_blank" rel="noopener"><i data-icon="mapPin"></i> Open in Google Maps</a>
+        </div>
+        <div class="map-wrap reveal">
+          <iframe
+            title="Wanderluxe office location on Google Maps"
+            src="https://www.google.com/maps?q=MG%20Road%2C%20Bengaluru%2C%20Karnataka%20560001&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+        <div class="office-grid" id="officeGrid" style="margin-top:22px"></div>
+      </div>
+    </section>
+
+    <section class="section" id="offices">
+      <div class="container">
+        <div class="grid grid--2" style="align-items:center;gap:44px">
+          <div class="reveal">
+            <span class="eyebrow">Before you write</span>
+            <h2>The quick answers</h2>
+            <p class="muted">Most questions are already answered in our FAQ — booking, payments, changes and what happens on the trip.</p>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">
+              <a class="btn btn--primary" href="faq.html">Read the FAQ <i data-icon="arrowRight"></i></a>
+              <a class="btn btn--ghost" href="booking-history.html"><i data-icon="ticket"></i> My bookings</a>
+            </div>
+          </div>
+          <div class="acc reveal" data-delay="1" data-single="true" id="contactFaq"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/cards.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>

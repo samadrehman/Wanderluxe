@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Bookings — Booking History | Wanderluxe</title>
+  <meta name="description" content="View, print or cancel your Wanderluxe tour bookings. All your trip details, payments and documents in one place.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6a3d'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='white' stroke-width='3'/%3E%3Cpath d='M40 24l-6 12-12 6 6-12z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="pagehero">
+      <img class="pagehero__bg" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1800&q=85" alt="Travel documents and map">
+      <div class="container">
+        <div class="crumbs"><a href="index.html">Home</a> <i data-icon="chevronRight"></i> <span>My bookings</span></div>
+        <h1>Your trips, all in one place</h1>
+        <p>Booking details, payments and documents for every journey. Print a ticket, check your balance or cancel a trip — no phone call needed.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="stats reveal" id="historyStats"></div>
+
+        <div class="toolbar" style="margin-top:34px">
+          <div class="chips" id="historyTabs">
+            <button class="chip is-active" data-filter="all" type="button"><i data-icon="ticket"></i> All bookings</button>
+            <button class="chip" data-filter="upcoming" type="button"><i data-icon="calendar"></i> Upcoming</button>
+            <button class="chip" data-filter="past" type="button"><i data-icon="checkCircle"></i> Completed</button>
+            <button class="chip" data-filter="cancelled" type="button"><i data-icon="x"></i> Cancelled</button>
+          </div>
+          <div class="toolbar__right">
+            <label class="searchbox">
+              <i data-icon="search"></i>
+              <input type="search" id="historySearch" placeholder="Search booking ID or trip…" aria-label="Search bookings">
+            </label>
+            <a class="btn btn--primary" href="packages.html"><i data-icon="plus"></i> New booking</a>
+          </div>
+        </div>
+
+        <div class="results-count" id="historyCount" style="margin-bottom:18px"></div>
+        <div id="historyList" style="display:grid;gap:14px"></div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="grid grid--3">
+          <div class="feature reveal">
+            <div class="feature__icon"><i data-icon="printer"></i></div>
+            <h3>Print or save your ticket</h3>
+            <p>Every booking has a printable ticket with the reference, dates, travellers and payment summary. Perfect for visa files.</p>
+          </div>
+          <div class="feature reveal" data-delay="1">
+            <div class="feature__icon feature__icon--teal"><i data-icon="shield"></i></div>
+            <h3>Free cancellation up to 15 days</h3>
+            <p>Plans change. Cancel from this page and we will show the exact refund before you confirm.</p>
+          </div>
+          <div class="feature reveal" data-delay="2">
+            <div class="feature__icon feature__icon--gold"><i data-icon="headset"></i></div>
+            <h3>Need to change something?</h3>
+            <p>Dates, names, room preferences — a planner can adjust most things in minutes.</p>
+            <a class="link-arrow" style="margin-top:10px" href="contact.html">Talk to a planner <i data-icon="arrowRight"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="notice">
+          <i data-icon="info"></i>
+          <span><b>This is a frontend demo.</b> Bookings are stored in this browser only (localStorage). Clearing site data removes them, and no payment is ever taken.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/cards.js"></script>
+  <script src="assets/js/history.js"></script>
+</body>
+</html>

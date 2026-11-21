@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Journal — Guides, Tips &amp; Stories | Wanderluxe</title>
+  <meta name="description" content="Practical travel guides, honest hotel notes and destination stories from the Wanderluxe team. India and beyond.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6a3d'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='white' stroke-width='3'/%3E%3Cpath d='M40 24l-6 12-12 6 6-12z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="pagehero">
+      <img class="pagehero__bg" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1800&q=85" alt="Forest valley">
+      <div class="container">
+        <div class="crumbs"><a href="index.html">Home</a> <i data-icon="chevronRight"></i> <span>Travel journal</span></div>
+        <h1>Notes from the road</h1>
+        <p>Practical guides, honest hotel notes and the occasional love letter to a place. Written by the people who plan your trips.</p>
+      </div>
+    </section>
+
+    <section class="section" id="blogListSection">
+      <div class="container">
+        <div id="blogFeature" style="margin-bottom:38px"></div>
+
+        <div class="toolbar">
+          <div class="chips" id="blogChips">
+            <button class="chip is-active" data-cat="all" type="button">All stories</button>
+            <button class="chip" data-cat="Travel tips" type="button"><i data-icon="info"></i> Travel tips</button>
+            <button class="chip" data-cat="Adventure" type="button"><i data-icon="mountain"></i> Adventure</button>
+            <button class="chip" data-cat="Stays" type="button"><i data-icon="hotel"></i> Stays</button>
+            <button class="chip" data-cat="Family" type="button"><i data-icon="users"></i> Family</button>
+            <button class="chip" data-cat="Honeymoon" type="button"><i data-icon="heart"></i> Honeymoon</button>
+          </div>
+          <div class="toolbar__right">
+            <label class="searchbox">
+              <i data-icon="search"></i>
+              <input type="search" id="blogSearch" placeholder="Search the journal…" aria-label="Search the journal">
+            </label>
+          </div>
+        </div>
+
+        <div class="results-count" id="blogCount" style="margin-bottom:18px"></div>
+        <div class="grid grid--3" id="blogGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="articleSection" hidden>
+      <div class="container" style="max-width:860px">
+        <button class="btn btn--ghost btn--sm" type="button" id="backToBlog" style="margin-bottom:18px"><i data-icon="arrowLeft"></i> Back to the journal</button>
+        <div id="articleWrap"></div>
+        <div class="panel-card" style="margin-top:26px">
+          <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;justify-content:space-between">
+            <div>
+              <b style="display:block;font-size:1rem">Enjoyed this story?</b>
+              <span class="small muted">Get one beautiful place in your inbox every Sunday.</span>
+            </div>
+            <form class="newsletter__form" id="blogNewsletter" style="max-width:380px;background:var(--bg);border-color:var(--line)">
+              <input type="email" placeholder="you@example.com" aria-label="Email address" required style="color:var(--ink)">
+              <button class="btn btn--primary btn--sm" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="blogCta">
+      <div class="container">
+        <div class="newsletter reveal">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1600&q=80" alt="Lake and mountains" loading="lazy">
+          <span class="eyebrow">The Sunday postcard</span>
+          <h2>One beautiful place. Every Sunday.</h2>
+          <p>Handpicked destinations, fare drops and early access to new departures. No spam, ever.</p>
+          <form class="newsletter__form" id="blogNewsletterMain">
+            <input type="email" placeholder="you@example.com" aria-label="Email address" required>
+            <button class="btn btn--white" type="submit">Subscribe <i data-icon="send"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/cards.js"></script>
+  <script src="assets/js/blog.js"></script>
+</body>
+</html>
